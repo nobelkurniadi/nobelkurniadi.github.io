@@ -115,27 +115,39 @@
                                         </div>
                                     </div>
                                 <div class="iq-get-in">
-                                <div id="formmessage">Success/Error Message Goes Here</div>
-                                <form class="form-horizontal" id="contactform" method="post">
+                                <div id="text-info"></div>
+                                <form class="form-horizontal" id="contactform" method="post" class="whatsapp-form">
                                     <div class="contact-form row">
                                         <div class="section-field col-md-4">
-                                            <input id="name" type="text" placeholder="Name*" name="name">
+                                            <div class="datainput">
+                                                <input class="validate" id="wa_name" placeholder="Name*" name="name" required="" type="text" value=''/>
+                                                <span class="highlight"></span><span class="bar"></span>
+                                            </div>
                                         </div>
                                         <div class="section-field col-md-4">
-                                            <input type="email" placeholder="Email*" name="email">
+                                            <div class="datainput">
+                                                <input class="validate" id="wa_email" placeholder="Email*" name="email" required="" type="email" value=''/>
+                                                <span class="highlight"></span><span class="bar"></span>
+                                            </div>
                                         </div>
                                         <div class="section-field col-md-4">
-                                            <input type="text" placeholder="Phone*" name="phone">
+                                            <div class="datainput">
+                                                <input class="validate" id="wa_number" placeholder="Phone*" name="count" required="" type="number" value=''/>
+                                                <span class="highlight"></span><span class="bar"></span>
+                                            </div>
                                         </div>
                                         <div class="section-field textarea col-md-12">
-                                            <textarea class="input-message" placeholder="Comment*" rows="5" name="message"></textarea>
+                                            <div class="datainput">
+                                                <textarea id='wa_textarea' class="input-message invalid" placeholder="Comment*" maxlength='5000' rows='5' required=""></textarea>
+                                                <span class="highlight"></span><span class="bar"></span>
+                                            </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <input type="hidden" name="action" value="sendEmail">
-                                        <button id="submit" name="submit" type="submit" value="Send" class="button iq-mt-30">Send Message</button>
+                                            <a class="send_form button iq-mt-30" href="javascript:void" type="submit" title="Send to Whatsapp">Send Message</a>
                                         </div>
                                     </div>
                                 </form>
+
                                 <div id="ajaxloader" style="display:none"><img class="center-block mt-30 mb-30" src="images/ajax-loader.gif" alt="#"></div>
                             </div>
                                 </div>
@@ -181,6 +193,49 @@
 
 <!-- jquery-typer -->
 <script type="text/javascript" src="js/jquery.typer.js"></script>
+
+<script>
+    $(document).on('click','.send_form', function(){
+    var input_name = document.getElementById('wa_name');
+    var input_email = document.getElementById('wa_email');
+    var input_number = document.getElementById('wa_number');
+    var input_textarea = document.getElementById('wa_textarea');
+
+    /* Whatsapp Settings */
+    var walink = 'https://web.whatsapp.com/send',
+        phone = '6281266446612',
+        walink2 = 'Hi, Nobel! ',
+        wa_success = 'Success ! Please check your whatsapp.',
+        wa_error = 'All field is required.';
+
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    var walink = 'whatsapp://send';
+    }
+
+    if("" != input_email.value && input_textarea.value != "" && input_name.value != "" && input_number.value){
+
+        /* Call Input Form */
+        var input_name1 = $("#wa_name").val(),
+            input_email1 = $("#wa_email").val(),
+            input_number1 = $("#wa_number").val(),
+            input_textarea1 = $("#wa_textarea").val();
+
+        /* Final Whatsapp URL */
+        var send_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+            'Name : ' + input_name1 + '%0A' +
+            'Email : ' + input_email1 + '%0A' +
+            'Phone : ' + input_number1 + '%0A' +
+            'Message : ' + input_textarea1 + '%0A';
+
+        /* Whatsapp Window Open */
+        window.open(send_whatsapp,'_blank');
+        document.getElementById("text-info").innerHTML = '<p class="text-success">'+wa_success+'</p>';
+        } else {
+        document.getElementById("text-info").innerHTML = '<p class="text-danger">'+wa_error+'</p>';
+        }
+    });
+</script>
 
 </body>
 
