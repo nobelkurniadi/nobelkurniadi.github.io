@@ -1,155 +1,842 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
+  
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Full Stack Web Developer" />
-    <meta name="description" content="IT Programmer, Frontend Developer, Backend Developer" />
-    <meta name="author" content="#" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Fullstack Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="PRO Card - Material Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmtheme" />
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Nobel Kurniadi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main-blue.css" type="text/css">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/fav.ico" />
+    
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+  </head>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;Raleway:400,500,600,700,800" rel="stylesheet">
-
-    <!-- theme css -->
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-
-</head>
-
-<body>
-
-    <!-- loading -->
-
-    <div id="loading" class="purple-bg">
-        <div id="loading-center">
-            <div data-loader="spinner"></div>
+  <body class="material-template">
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
         </div>
+      </div>
     </div>
+    <!-- /Loading animation -->
 
-    <!-- loading End -->
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="header-content">
+          <div class="site-title-block mobile-hidden">
+            <div class="site-title">Nobel <span>Kurniadi</span></div>
+          </div>
 
-
-    <!-- Header  -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light white-bg">
-                    <div class="col-md-3 purple-bg">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo2.png" class="img-fluid" alt="logo"></a>
-                    </div>
-                    <div class="col-md-9">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="ti-menu"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                                <li class="nav-item active">
-                                    <a class="nav-link" data-type="page-transition" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-type="page-transition" href="about-me.html">About me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-type="page-transition" href="resume.html">resume</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-type="page-transition" href="services.html">services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-type="page-transition" href="portfolio.html">portfolio</a>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link" data-type="page-transition" href="contact-me.html">contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+          <!-- Navigation -->
+          <div class="site-nav">
+            <!-- Main menu -->
+            <ul id="nav" class="site-main-menu">
+              <li>
+                <a class="pt-trigger" href="#home">Home</a><!-- href value = data-id without # of .pt-page. -->
+              </li>
+              <li>
+                <a class="pt-trigger" href="#resume">Resume</a>
+              </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <!-- <a class="pt-trigger" href="#blog">Blog</a> -->
+              </li>
+              <li>
+                <a class="pt-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- /Main menu -->
+          </div>
+          <!-- Navigation -->
         </div>
-    </header>
-    <!-- Header End -->
+      </header>
+      <!-- /Header -->
 
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Nobel Kurniadi</div>
+        </div>
 
-    <!-- Begin Content -->
-    <div class="main-container">
-        <!-- About us -->
-        <section class="me-home wrapper">
-            <div class="container-fluid h-100">
-                <div class="row row-eq-height h-100">
-                    <div class="col-md-3 purple-bg">
-                        <div class="iq-objects">
-<!-- BACKGROUND PARTICLES -->   
-        <div id="particles-js"></div>
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
 
-                            <span class="iq-objects-01">
-                                    <img class="img-fluid" src="images/01.png" alt="drive">
-                                </span>
-                        </div>
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
+
+            <!-- Home Subpage -->
+            <section class="pt-page" data-id="home">
+              <div class="section-inner start-page-content">
+                <div class="page-header">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <div class="photo">
+                        <img src="images/profile.png" alt="">
+                      </div>
                     </div>
-                    <div class="col-md-9 main-content align-self-center">
-                        <div id="boxscroll" class="iq-home">
-                            <div class="home-deta iq-mt-90">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="boder-img">
-                                            <img src="images/nobel2.jpg" class="img-fluid" alt="#">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 content-deta">
-                                        <h2 class="iq-tw-8 ">Hello,<br>I Am Nobel Kurniadi</h2>
-                                        <div id="typer"></div>
-                                        <p class="lead iq-tw-4">Hi, I'm Nobel!  I've been building websites and apps since 2014 and also have a Diploma's degree in Engineering. I was working at batam government for 6 years as IT programmer and 12 months at CPR Vision as Full Stack Web Developer</p>
-                                        <a class="button iq-mt-30" href="about-me.html">Know about me</a>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <div class="title-block">
+                        <h1>Nobel Kurniadi</h1>
+                        <div class="owl-carousel text-rotation">                                    
+                          <div class="item">
+                            <div class="sp-subtitle">Fullstack Web Developer</div>
+                          </div>
                         </div>
+                      </div>
+
+                      <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nobel-kurniadi-522b8370/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/c/nobelkurniadi/" tabindex="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/nobelkurniadi/" target="_blank"><i class="fa fa-facebook"></i></a>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!-- About Us End -->
+
+                <div class="page-content">
+                  <div class="row">
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="about-me">
+                        <div class="block-title">
+                          <h3>About <span>Me</span></h3>
+                        </div>
+                        <p>Hi, I'm Nobel! <br> 
+                          I'm Linux user who likes programming</p>
+                      </div>
+                      <div class="download-resume">
+                        <a href="#resume" class="btn btn-secondary">My Resume</a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <ul class="info-list">
+                        <li><span class="title">Nationality</span><span class="value">Indonesia</span></li>
+                        <li><span class="title">Address</span><span class="value">Batam, Kepulauan Riau, Indonesia</span></li>
+                        <li><span class="title">Email</span><span class="value">nobelkurniadi@gmail.com</span></li>
+                        <li><span class="title">Freelance</span><span class="value available">Available</span></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page" data-id="resume">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Resume</h2>
+                </div>
+                <div class="page-content">
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="block">
+                        <div class="block-title">
+                          <h3>Education</h3>
+                        </div>
+
+                        <div class="timeline">
+                          <!-- Education 1 -->
+                          <div class="timeline-item">
+                            <h4 class="item-title">Computer Engineering</h4>
+                            <span class="item-period">2013</span>
+                            <span class="item-small">Politeknik Universitas Andalas</span>
+                            <!-- <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+                          </div>
+                          <!-- / Education 1 -->
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="block">
+                        <div class="block-title">
+                          <h3>Experience</h3>
+                        </div>
+
+                        <div class="timeline">
+                          <!-- Experience 1 -->
+                          <div class="timeline-item">
+                            <h4 class="item-title">Fullstack Developer</h4>
+                            <span class="item-period">Jan 2022 - Current</span>
+                            <span class="item-small">Dinas Komunikasi dan Informatika</span>
+                            <!-- <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+                          </div>
+                          <!-- / Experience 1 -->
+
+                          <!-- Experience 2 -->
+                          <div class="timeline-item">
+                            <h4 class="item-title">Fullstack Developer</h4>
+                            <span class="item-period">April 2020 - Mei 2021</span>
+                            <span class="item-small">CPR Vision Management Pte Ltd.</span>
+                            <!-- <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+                          </div>
+                          <!-- / Experience 2 -->
+
+                          <!-- Experience 3 -->
+                          <div class="timeline-item">
+                            <h4 class="item-title">IT Support & Programmer</h4>
+                            <span class="item-period">Jan 2014 - Dec 2020 </span>
+                            <span class="item-small">Pemerintah Kota Batam</span>
+                            <!-- <p class="item-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+                          </div>
+                          <!-- / Experience 3 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="block">
+                        <div class="block-title">
+                          <h3>Technical <span>Skills</span>
+                          </h3>
+                        </div>
+                        <div class="skills-info">
+                          <h4>HTML</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>CSS</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>Javascript</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>Bootstrap</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>DBMS MySQL</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>PHP</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>Laravel</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>WordPress</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>Linux</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>GIT Versioning Control (Gitlab, Githup)</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="block">
+                        <div class="block-title">
+                          <h3>Language <span>Skills</span>
+                          </h3>
+                        </div>
+                        <div class="skills-info">
+                          <h4>Bahasa Indonesia</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                          <h4>English</h4>
+                          <div class="skill-container">
+                            <div class="skill-percentage skill-0"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Download Resume Button -->
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="block">
+                        <div class="center download-resume">
+                          <!-- <a href="#" class="btn btn-secondary">Download Resume</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Download Resume Button -->
+
+                </div>
+              </div>
+            </section>
+            <!-- End of Resume Subpage -->
+
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page" data-id="portfolio">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Portfolio</h2>
+                </div>
+                <div class="page-content">
+
+                  <!-- Portfolio Content -->
+                  <div class="portfolio-content">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Year</th>
+                          <th>Project</th>
+                          <th>Tech</th>
+                          <th>Company</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://egov.batam.go.id/" target="_blank">E-Government</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://lakse.batam.go.id" target="_blank">Layanan Administrasi Kependudukan Secara Elektronik</a> </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://sekuntum.batam.go.id" target="_blank">Sistem Elektronik Akun Tunggal Masyarakat</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://bankesda.batam.go.id" target="_blank">Bantuan Kesehatan Daerah</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://support.batam.go.id/upse/" target="_blank">Penyerahan Sistem Elektronik Pemko Batam</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td>Perpustakaan JDIH Pemko Batam </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://jdih.dprd.batam.go.id/dokumen-hukum" target="_blank">Produk Hukum DPRD Kota Batam</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://jdih.batam.go.id/dokumen-hukum/" target="_blank">Produk Hukum JDIH Pemko Batam</a></td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td>Aplikasi Booking Appointment </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td>Aplikasi Registrasi BIMTEK </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td><a href="https://ayovaksin.batam.go.id/" target="_blank">Ayovaksin</a> </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2022 </td>
+                          <td>Sistem Informasi Rapat </td>
+                          <td>Laravel</td>
+                          <td><a href="https://kominfo.batam.go.id/" target="_blank">Dinas Kominfo Kota Batam</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2021 </td>
+                          <td>E-Commerce YSL Beauty Indonesia </td>
+                          <td>Wordpress</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2021 </td>
+                          <td>Kiehls Game </td>
+                          <td>Laravel</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2021 </td>
+                          <td>Science Centre SG </td>
+                          <td>Laravel</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2020 </td>
+                          <td>E-Commerce Lancome Indonesia </td>
+                          <td>Wordpress</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2020 </td>
+                          <td>Gucci Thailand </td>
+                          <td>Laravel</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2020 </td>
+                          <td>Gucci Singapore </td>
+                          <td>Laravel</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2020 </td>
+                          <td>Raffles Hotel Singapore </td>
+                          <td>Laravel</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2020 </td>
+                          <td>Company Profile Mercedes Benz SG </td>
+                          <td>Bootstrap</td>
+                          <td><a href="https://cprvision.com/" target="_blank">CPR Vision Management Pte Ltd.</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Aplikasi SISSUPER</td>
+                          <td>Laravel</td>
+                          <td><a href="https://perakimtan.batam.go.id/" target="_blank">Dinas Perakimtan Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td><a href="https://www.jayatembaga.co.id/" target="_blank">Website Kerajinan Tembaga Boyolali</a> </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Aplikasi Data G5 </td>
+                          <td>PHP Native</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Aplikasi Alumni MAPAWIMA UWM Yogyakarta </td>
+                          <td>Codeigniter</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Website Personal Gintoyono </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Website Sekolah Teramia </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2019 </td>
+                          <td>Website Gereja GKPA </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2018 </td>
+                          <td>Website Bintang Catering </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2018 </td>
+                          <td><a href="https://perumahan.perakimtan.batam.go.id/">Aplikasi Rumah Susun Sewa</a> </td>
+                          <td>PHP Native</td>
+                          <td><a href="https://perakimtan.batam.go.id/" target="_blank">Dinas Perakimtan Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2017 </td>
+                          <td><a href="https://perumahan.perakimtan.batam.go.id/" target="_blank">Aplikasi Single Data Rumah Liar</a> </td>
+                          <td>PHP Native</td>
+                          <td><a href="https://perakimtan.batam.go.id/" target="_blank">Dinas Perakimtan Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2017 </td>
+                          <td><a href="https://rusunawa.perakimtan.batam.go.id/">Website Rusunawa</a> </td>
+                          <td>PHP Native</td>
+                          <td><a href="https://perakimtan.batam.go.id/" target="_blank">Dinas Perakimtan Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2017 </td>
+                          <td><a href="https://perakimtan.batam.go.id/">Website Dinas perakimtan</a> </td>
+                          <td>Wordpress</td>
+                          <td><a href="https://perakimtan.batam.go.id/" target="_blank">Dinas Perakimtan Kota Batam</a></td>
+                        </tr>
+                        <tr>
+                          <td>2017 </td>
+                          <td>Aplikasi Klinik Desni Wangsa </td>
+                          <td>PHP Native</td>
+                          <td>Freelance </td>
+                        </tr>
+                        <tr>
+                          <td>2016 </td>
+                          <td><a href="https://apok.batam.go.id/" target="_blank">Aplikasi Pelayan Kecamatan Online</a> </td>
+                          <td>PHP Native</td>
+                          <td><a href="https://keclubukbaja.batam.go.id/" target="_blank">Kecamatan Lubuk Baja</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2016 </td>
+                          <td>Website Buletin Kecamatan Lubuk Baja </td>
+                          <td>Wordpress</td>
+                          <td><a href="https://keclubukbaja.batam.go.id/" target="_blank">Kecamatan Lubuk Baja</a> </td>
+                        </tr>
+                        <tr>
+                          <td>2016 </td>
+                          <td>Website M2 Logistik </td>
+                          <td>Wordpress</td>
+                          <td>Freelance </td>
+                        </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                    </table>
+
+                  </div>
+                  <!-- /Portfolio Content -->
+                </div>
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Blog Subpage -->
+            <section class="pt-page" data-id="blog">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Blog</h2>
+                </div>
+                <div class="page-content">
+
+                  <!-- Blog Posts Grid -->
+                  <div class="blog-masonry two-columns">
+                    <!-- Blog Post 1 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_1.jpg" alt="blog-post-1" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">6</span><span class="month">Dec</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">Travel</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Bootstrap is the Most Popular Framework</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 1 -->
+
+                    <!-- Blog Post 2 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_2.jpg" alt="blog-post-2" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">3</span><span class="month">Nov</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">jQuery</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">One Framework, Every Device</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 2 -->
+
+                    <!-- Blog Post 3 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_3.jpg" alt="blog-post-3" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">12</span><span class="month">Oct</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">Sport</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Designed for Everyone, Everywhere</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 3 -->
+
+                    <!-- Blog Post 4 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_4.jpg" alt="blog-post-4" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">18</span><span class="month">Aug</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">CSS</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">An Introduction To PostCSS</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 4 -->
+
+                    <!-- Blog Post 5 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_5.jpg" alt="blog-post-5" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">2</span><span class="month">Jul</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">                        
+                          <ul class="category">
+                            <li><a href="#">CSS3</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Original and Innovative Web Layouts</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 5 -->
+
+                    <!-- Blog Post 6 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_6.jpg" alt="blog-post-6" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">8</span><span class="month">May</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">HTML5</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 6 -->
+
+                    <!-- Blog Post 7 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_7.jpg" alt="blog-post-7" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">7</span><span class="month">Apr</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">Design</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Navigation for Mega-Sites</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 7 -->
+
+                    <!-- Blog Post 8 -->
+                    <div class="item">
+                      <div class="blog-card">
+                        <div class="media-block">
+                          <a href="blog-post-1.html">
+                            <img class="post-image img-responsive" src="images/blog/blog_post_8.jpg" alt="blog-post-8" />
+                            <div class="mask"></div>
+                            <div class="post-date"><span class="day">21</span><span class="month">Mar</span><!--<span class="year">2016</span>--></div>
+                          </a>
+                        </div>
+                        <div class="post-info">
+                          <ul class="category">
+                            <li><a href="#">CSS3</a></li>
+                          </ul>
+                          <a href="blog-post-1.html"><h4 class="blog-item-title">Front-End Challenge Accepted: CSS 3D Cube</h4></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Blog Post 8 -->
+                  </div>
+                  <!-- Blog Posts Grid -->
+                </div>
+              </div>
+            </section>
+            <!-- /Blog Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page" data-id="contact">
+              <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                  <h2>Contact</h2>
+                </div>
+                <div class="page-content">
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <div class="block-title">
+                        <h3>Get in <span>Touch</span></h3>
+                      </div>
+                      <!-- Google Map -->
+                      <!-- <div id="map" class="map"></div> -->
+                      <!-- End of Google Map -->
+
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h5>Batam, Kepulauan Riau - Indonesia</h5>
+                        </div>
+                      </div>
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h5><a href="mailto:" class="__cf_email__">nobelkurniadi@gmail.com</a></h5>
+                        </div>
+                      </div>
+                      <div class="contact-info-block">
+                        <div class="ci-icon">
+                          <i class="fa fa-check"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h5>Freelance Available</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6">
+                      <div class="block-title">
+                        <h3>Contact <span>Form</span></h3>
+                      </div>
+                      <form id="contact-form" method="post" action="https://lmpixels.com/demo/procard/contact_form/contact_form.php">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-user"></i>
+                            <label>Full Name</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-envelope"></i>
+                            <label>Email Address</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="form-group form-group-with-icon">
+                            <i class="fa fa-comment"></i>
+                            <label>Message for Me</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                            <div class="form-control-border"></div>
+                            <div class="help-block with-errors"></div>
+                          </div>
+
+                          <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+                          <input type="submit" class="button btn-send" value="Send message">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
     </div>
-    <!-- Main Content End -->
-
-
-    <!-- Footer -->
     <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 purple-bg">
-                    <div class="footer-copyright text-white">Copyright @ <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a class="text-white" href="#">Nobel Kurniadi.</a></div>
-                </div>
-                <div class="col-md-9">
-                    <ul class="follow-us pull-right" style="display: inline-block !important">
-                        <li>Follow Me :</li>
-                        <li><a href="https://www.facebook.com/nobelkurniadi/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/nobelkurniadi/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/nobel-kurniadi-522b8370/" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a></li>
-                        <li><a href="https://www.youtube.com/c/nobelkurniadi/" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/nobelkurniadi/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      <div class="copyrights">© 2020 All rights reserved.</div>
     </footer>
-    <!-- Footer End -->
 
- 
-
-
-    <!-- theme js -->
-    <script type="text/javascript" src="js/theme.js"></script>
-
-    <!-- jquery-typer -->
-    <script type="text/javascript" src="js/jquery.typer.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pages-switcher.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
